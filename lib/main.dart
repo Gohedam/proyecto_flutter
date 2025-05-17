@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'presentation/pages/product_list_page.dart';
-import 'presentation/pages/product_form_page.dart'; // <- la crearemos luego
+import 'presentation/pages/product_form_page.dart'; 
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (_) => const ProductListPage(),
         '/add': (_) => const ProductFormPage(),
-        '/edit': (_) => const ProductFormPage(), // reutilizamos el mismo formulario
+        '/edit': (_) => const ProductFormPage(), 
       },
     );
   }
